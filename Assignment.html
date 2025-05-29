@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <div class="bubbles">
+  <span style="left: 5%; animation-delay: 0s;"></span>
+  <span style="left: 15%; animation-delay: 2s;"></span>
+  <span style="left: 25%; animation-delay: 4s;"></span>
+  <span style="left: 35%; animation-delay: 1s;"></span>
+  <span style="left: 45%; animation-delay: 3s;"></span>
+  <span style="left: 55%; animation-delay: 0.5s;"></span>
+  <span style="left: 65%; animation-delay: 2.5s;"></span>
+  <span style="left: 75%; animation-delay: 1.5s;"></span>
+  <span style="left: 85%; animation-delay: 3.5s;"></span>
+  <span style="left: 95%; animation-delay: 1s;"></span>
+</div>
+
+
+
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Accounting Terms Scramble</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="words.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="background-halo"></div>
+    <div class="container">
+      <h2>Accounting Terms Scramble</h2>
+      <br>
+      <div class="content">
+        <p class="word" id="word"></p>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <br>
+          <p class="time">Time left: <b class="timer">60</b>s</p>
+          <p class="score">Score: <b class="score-value">0</b>/10</p>
+        </div>
+        <input type="text" class="input" placeholder="Enter your answer" />
+        <div class="details">
+          <h4><label class="lblWrong" style="color: red"></label></h4>
+          <h4><label class="lblCorrect" style="color: green"></label></h4>
+        </div>
+        <div class="buttons">
+          <button class="refresh-word">Refresh Word</button>
+          <button class="check-word">Check Word</button>
+        </div>
+        <div class="game-over" style="display:none;">
+          <h3>🎉 Game Over 🎉</h3>
+          <p class="final-score"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
